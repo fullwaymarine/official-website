@@ -2,7 +2,8 @@
 
 
 :root{
-    --menuTop: 64px;
+    --menuTop: 56px;
+    --whiteWord: #ffffff
 }
 body {
     margin: 0;
@@ -25,8 +26,10 @@ img,#header_background,#mask {
 }
 
 #navbar {
-    background-color: #ffffff;
+    background-color: #001122;
     text-align: left;
+    display: flex;
+    align-items: center;
     position: fixed;
     width: 100vw;
     height: var(--menuTop);
@@ -35,11 +38,21 @@ img,#header_background,#mask {
     z-index: 100;
 }
 
+#nav_company_name{
+    color: var(--whiteWord);
+    font-size: 20px;
+    margin-left: 12px;
+}
 #company_name{
     position: absolute;
-    top: 6vh;
     border: #fff 2px solid;
-    color: #ffffff;
+    color: var(--whiteWord);
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2vw;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -48,22 +61,23 @@ img,#header_background,#mask {
 #company_name span{
     display: block;
     text-align: center;
-    font-size: 2rem;
-    padding: 2vw;
+    font-size: 26pt;
 }
 
 #logo_block {
     background-color: #ffffff;
     text-align: center;
-    height: 100%;
+    height: 68%;
     aspect-ratio: 65/56;
-    margin: 0 0 0 2vw;
+    margin: 0 0 0 3vw;
 }
 
 #company{
     position: relative;
+    display: flex;
+    align-items: center;
     width: 100vw;
-    height: 30vh;
+    height: 45vh;
     margin-top: var(--menuTop);
 }
 
