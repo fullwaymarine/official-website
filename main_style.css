@@ -3,10 +3,14 @@
 
 :root{
     --menuTop: 56px;
-    --whiteWord: #ffffff
+    --whiteWord: #ffffff;
+    --contentPadding: 0 12vh;
+    --themeColor: #031a30;
+    --titleColor: #0b3f6d;
 }
 body {
     margin: 0;
+    font-family: Verdana, Arial;
 }
 
 img,#header_background,#mask {
@@ -26,7 +30,7 @@ img,#header_background,#mask {
 }
 
 #navbar {
-    background-color: #001122;
+    background-color: var(--themeColor);
     text-align: left;
     display: flex;
     align-items: center;
@@ -85,3 +89,31 @@ img,#header_background,#mask {
     width: 100%;
     height: 100%;
 }
+
+#about{
+    background: #e1dfdb;
+}
+
+.title {
+    font-size: 18pt;
+    font-weight: 700;
+    line-height: 1.75;
+    color: var(--titleColor);
+}
+
+section:not(:first-of-type) {
+    padding: 16px 0;
+}
+
+section:not(#company) > div {   
+    padding: var(--contentPadding);
+}
+section > div:nth-of-type(2) {
+    font-size: 12pt;
+    line-height: 1.75;
+}
+section div:first-of-type{   
+    display: inline-block;
+
+}
+ 
