@@ -7,7 +7,23 @@
     --contentPadding: 0 12vh;
     --themeColor: #031a30;
     --titleColor: #0b3f6d;
+    --titleFontSize: 20px;
+    --footerFontSize: 2vh;
+    --companyNameFontSize: 26pt;
 }
+
+
+@media screen and (max-width: 768px) {
+    :root{
+        --menuTop: 56px;
+        --contentPadding: 0 8vw;
+        --titleFontSize: 3.8vw;
+        --footerFontSize: 3vw;
+        --companyNameFontSize: 8vw;
+    }
+    
+}
+
 body {
     margin: 0;
     font-family: Verdana, Arial;
@@ -42,9 +58,22 @@ img,#header_background,#mask {
     z-index: 100;
 }
 
+#navbar > a {
+    display: flex;
+    width: 100vw;
+    height: var(--menuTop);
+    flex-wrap: wrap;
+    align-content: center
+
+
+}
+
 #nav_company_name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     color: var(--whiteWord);
-    font-size: 20px;
+    font-size: var(--titleFontSize);
     margin-left: 12px;
 }
 #company_name{
@@ -65,7 +94,7 @@ img,#header_background,#mask {
 #company_name span{
     display: block;
     text-align: center;
-    font-size: 26pt;
+    font-size: var(--companyNameFontSize);
 }
 
 #logo_block {
@@ -130,7 +159,7 @@ section:nth-of-type(even) {
     align-items: center;
     background-color: var(--themeColor);
     color: var(--whiteWord);
-    font-size: 2vh;
+    font-size: var(--footerFontSize);
 }
 
 #copyRight p{
