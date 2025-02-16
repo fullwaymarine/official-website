@@ -7,9 +7,11 @@
     --contentPadding: 0 14vw;
     --themeColor: #031a30;
     --titleColor: #0b3f6d;
-    --titleFontSize: 20px;
     --footerFontSize: 2vh;
     --companyNameFontSize: 26pt;
+    --titleFontSize: 1.72vw;
+    --serviceFontSize: 1.5vw;
+    --serviceImgWidth: 12vw;
 }
 
 
@@ -17,11 +19,22 @@
     :root{
         --menuTop: 56px;
         --contentPadding: 0 8vw;
-        --titleFontSize: 3.8vw;
         --footerFontSize: 3vw;
-        --companyNameFontSize: 8vw;
+        --companyNameFontSize: 7.2vw;
+        --titleFontSize: 2.8vh;
+        --serviceFontSize: 3vh;
+        --serviceImgWidth: 100%;
     }
     
+    .services {
+        gap: 2vw !important;
+    }
+    .service_title{
+        padding-bottom: 1vh !important;
+    }
+    #nav_company_name{
+        font-size: 3.8vw !important;
+    }
 }
 
 body {
@@ -125,7 +138,7 @@ img,#header_background,#mask {
 } */
 
 .title {
-    font-size: 1.72vw;
+    font-size:var(--titleFontSize);
     font-weight: 700;
     line-height: 1.75;
     color: var(--titleColor);
@@ -190,7 +203,7 @@ section:nth-of-type(even) {
 }
 
 .service_img{
-    width: 12vw;
+    width: var(--serviceImgWidth);
     aspect-ratio: 1/1;
     object-fit: cover;
 }
@@ -205,7 +218,7 @@ section:nth-of-type(even) {
 
 
 .service_title {
-    font-size: 1.5vw;
+    font-size: var(--serviceFontSize);
     font-weight: 700;
     line-height: 1.75;
     color: var(--titleColor);
