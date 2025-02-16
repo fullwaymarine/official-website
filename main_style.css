@@ -168,6 +168,10 @@ section:nth-of-type(even) {
     background-color: #e1dfdb;
 }
 
+section:nth-of-type(odd) .service_img {
+    background-color: #e1dfdb;
+}
+
 #footer {
     text-align: center;
     height: 6vh;
@@ -190,9 +194,11 @@ section:nth-of-type(even) {
     height: 300px;
 }
 
-#kindbar{
-    background: var(--themeColor);
+.kindbar{
+    background: var(--themeColor) !important;
     color: var(--whiteWord);
+    padding: 8px 0;
+    width: 40vw;
 }
 
 .kindbarDiv {
@@ -211,6 +217,15 @@ section:nth-of-type(even) {
     width: var(--serviceImgWidth);
     aspect-ratio: 1/1;
     object-fit: cover;
+    display: flex;
+    background-color: #fff;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.service_img img{
+    width: 95% !important;
+    height: 95% !important;
 }
 
 .services p{
