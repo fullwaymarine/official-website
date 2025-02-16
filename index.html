@@ -24,7 +24,8 @@
 
     <link rel="icon" href="asset/favicon.svg" sizes="32x32" type="image/svg">
     
-    <link rel="stylesheet" href="main_style.css?32ewd44w2w43">
+    <link rel="stylesheet" href="main_style.css?32ewd44w2sw43">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">   
     <title>福爾威船舶有限公司 FullwayMarine CO.LTD</title>
 </head>
 <body>
@@ -134,6 +135,40 @@
         </section>
         <section class="kindbar">
             <div class="title kindbarDiv">
+                Case
+            </div>
+        </section>
+        <section class="ship_insection">
+            <div class="">
+                船舶檢驗⚓ Ship Inspection
+            </div>
+            
+            <div class="swiper gallery">
+                <div class="swiper-wrapper ">
+                    <div class="swiper-slide">
+                        <img src="images/ship_inspection/1.jpg" alt="ship inspection">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/ship_inspection/2.jpg" alt="ship inspection">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/ship_inspection/3.jpg" alt="ship inspection">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/ship_inspection/4.jpg" alt="ship inspection">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/ship_inspection/5.jpg" alt="ship inspection">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/ship_inspection/6.jpg" alt="ship inspection">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="kindbar">
+            <div class="title kindbarDiv">
                 Company
             </div>
         </section>
@@ -159,7 +194,7 @@
         </div>
     </div>
 </body>
-
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"> </script>
 <script>
     const services = document.querySelectorAll('.services');
     services.forEach((service, index) => {
@@ -167,5 +202,17 @@
             service.style.flexDirection = 'row';
         }
     });
+
+    var mySwiper = new Swiper ('.swiper', {
+    loop: true,
+    spaceBetween : 100,
+    autoplay: {
+        delay: 2000,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    
+  })        
 </script>
 </html>

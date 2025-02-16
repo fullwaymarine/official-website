@@ -205,6 +205,8 @@ section:nth-of-type(odd) .service_img {
     color: var(--whiteWord) !important;
 }
 
+ 
+
 .services {
     display: flex;
     flex-direction: row-reverse;
@@ -254,3 +256,14 @@ section:nth-of-type(odd) .service_img {
 div p:nth-of-type(2) {
     line-height: 1.6;
 }
+
+.swiper {
+    width: 30vw;
+    height: 30vw;
+
+} 
+
+.swiper img {
+    object-fit: cover;
+    
+} 
