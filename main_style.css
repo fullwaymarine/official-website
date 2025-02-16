@@ -4,7 +4,7 @@
 :root{
     --menuTop: 56px;
     --whiteWord: #ffffff;
-    --contentPadding: 0 12vh;
+    --contentPadding: 0 14vw;
     --themeColor: #031a30;
     --titleColor: #0b3f6d;
     --titleFontSize: 20px;
@@ -26,7 +26,7 @@
 
 body {
     margin: 0;
-    font-family: Verdana, Arial;
+    font-family: Lora, Verdana, Arial;
 }
 
 img,#header_background,#mask {
@@ -80,8 +80,8 @@ img,#header_background,#mask {
     position: absolute;
     border: #fff 2px solid;
     color: var(--whiteWord);
-    width: 80%;
-    height: 80%;
+    width: 72%;
+    height: 60%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -125,7 +125,7 @@ img,#header_background,#mask {
 } */
 
 .title {
-    font-size: 18pt;
+    font-size: 1.72vw;
     font-weight: 700;
     line-height: 1.75;
     color: var(--titleColor);
@@ -172,3 +172,48 @@ section:nth-of-type(even) {
     height: 300px;
 }
 
+#kindbar{
+    background: var(--themeColor);
+    color: var(--whiteWord);
+}
+
+.kindbarDiv {
+    color: var(--whiteWord) !important;
+}
+
+.services {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 8vw;
+}
+
+.service_img{
+    width: 12vw;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.services p{
+    margin: 0;
+}
+
+.service_text {
+    flex: 1;
+}
+
+
+.service_title {
+    font-size: 1.5vw;
+    font-weight: 700;
+    line-height: 1.75;
+    color: var(--titleColor);
+    padding-bottom: 0.5vw;
+}
+
+.sevice_content {
+    display: flex;
+    gap: 2vw;
+    flex-direction: column;
+}
