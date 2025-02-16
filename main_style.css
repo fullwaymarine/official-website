@@ -2,16 +2,17 @@
 
 
 :root{
-    --menuTop: 56px;
+    --menuTop: 48px;
     --whiteWord: #ffffff;
     --contentPadding: 0 14vw;
     --themeColor: #031a30;
     --titleColor: #0b3f6d;
     --footerFontSize: 2vh;
     --companyNameFontSize: 26pt;
-    --titleFontSize: 1.72vw;
-    --serviceFontSize: 1.5vw;
+    --titleFontSize: 1.6vw;
+    --serviceFontSize: 1.6vw;
     --serviceImgWidth: 12vw;
+    --navFontSize: 1.2vw;
 }
 
 
@@ -39,12 +40,16 @@
 
 body {
     margin: 0;
-    font-family: Verdana, Arial;
+    font-family: 微軟正黑體, Verdana, Arial;
 }
 
 img,#header_background,#mask {
     width: 100%;
     height: 100%;
+}
+
+a{
+    text-decoration: none;
 }
 
 #mask {
@@ -86,7 +91,7 @@ img,#header_background,#mask {
     flex-direction: column;
     justify-content: center;
     color: var(--whiteWord);
-    font-size: var(--titleFontSize);
+    font-size: var(--navFontSize);
     margin-left: 12px;
 }
 #company_name{
@@ -115,7 +120,7 @@ img,#header_background,#mask {
     text-align: center;
     height: 68%;
     aspect-ratio: 65/56;
-    margin: 0 0 0 3vw;
+    margin: 0 0 0 2vw;
 }
 
 #company{
@@ -139,7 +144,7 @@ img,#header_background,#mask {
 
 .title {
     font-size:var(--titleFontSize);
-    font-weight: 700;
+    font-weight: 600;
     line-height: 1.75;
     color: var(--titleColor);
 }
@@ -219,7 +224,7 @@ section:nth-of-type(even) {
 
 .service_title {
     font-size: var(--serviceFontSize);
-    font-weight: 700;
+    font-weight: 600;
     line-height: 1.75;
     color: var(--titleColor);
     padding-bottom: 0.5vw;
