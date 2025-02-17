@@ -223,6 +223,7 @@ section:nth-of-type(odd) .service_img {
 
 .service_img{
     width: var(--serviceImgWidth);
+    position: relative;
     aspect-ratio: 1/1;
     object-fit: cover;
     display: flex;
@@ -266,7 +267,7 @@ div p:nth-of-type(2) {
 .swiper {
     width: 16vw;
     height: 16vw;
-    padding: 0 17vw !important;
+    padding: 0 16.8vw !important;
 } 
 
 .swiper img {
@@ -297,7 +298,7 @@ div p:nth-of-type(2) {
     transition-timing-function: cubic-bezier(0.48, 0.02, 0.38, 1)
 }
 
-.swiper-slide::after, .service_img::after {
+.swiper-slide::after,#docking_repair .service_img::after,#crew_management .service_img::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -305,5 +306,16 @@ div p:nth-of-type(2) {
     width: 0;
     height: 0;
     border-left: 10px solid transparent;
-    border-bottom: 10px solid var(--titleColor); /* 紅色三角形 */
+    border-bottom: 10px solid var(--titleColor);
+}
+
+#technical .service_img::after,#ship_management .service_img::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    left: 0;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid var(--titleColor);
 }
