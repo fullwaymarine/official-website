@@ -166,7 +166,7 @@ section > div:nth-of-type(2), .case_content > p:nth-of-type(2) {
     font-size: 12pt;
     line-height: 1.75;
 }
-section:nth-of-type(even), .swiper-slide {
+section:nth-of-type(even), .swiper-slide,.ship_insection {
     background-color: #e1dfdb;
 }
 
