@@ -11,7 +11,6 @@
     <link rel="alternate" hreflang="zh-TW" href="https://www.fullwaymarine.com.tw">
     <link rel="alternate" hreflang="en-US" href="https://www.fullwaymarine.com.tw">
     <link rel="icon" href="asset/favicon.svg" sizes="32x32" type="image/svg">    
-    <link rel="stylesheet" href="main_style.css?32eww2w43">
 
     <meta name="copyright" content="福爾威船舶有限公司 FullwayMarine CO.LTD">
     <meta property="og:title" content="福爾威船舶有限公司 FullwayMarine CO.LTD">
@@ -29,7 +28,7 @@
     <meta name="robots" content="index, follow">
 
     <link rel="icon" href="asset/favicon.svg" sizes="32x32" type="image/svg">
-    <link rel="stylesheet" href="main_style.css?32ewd44w2sw43">
+    <link rel="stylesheet" href="main_style.css?32ewd444w2sw43">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">   
     <title>福爾威船舶有限公司 FullwayMarine CO.LTD</title>
 </head>
@@ -144,29 +143,35 @@
             </div>
         </section>
         <section class="ship_insection">
-            <div class="">
-                船舶檢驗⚓ Ship Inspection
+            <div class="case_text">
+                <div class="case_title service_title">
+                    船舶檢驗⚓ Ship Inspection
+                </div>
+                <div class="case_content">
+                    <p>協助船舶進行各項證書,初期檢驗,年度檢驗,中期檢驗,換證檢驗,及特殊檢驗等相關事宜。</p>
+                    <p>Assist ships in obtaining various certificates, as well as conducting initial inspections, annual inspections, mid-term inspections, renewal inspections, special inspections, and other related matters.</p>
+                </div>
             </div>
             
             <div class="swiper gallery">
                 <div class="swiper-wrapper ">
                     <div class="swiper-slide">
-                        <img src="images/ship_inspection/1.webp" alt="ship inspection">
+                        <img src="images/ship_inspection/1.webp" loading="lazy" alt="ship inspection">
                     </div>
                     <div class="swiper-slide">
-                        <img src="images/ship_inspection/2.webp" alt="ship inspection">
+                        <img src="images/ship_inspection/2.webp" loading="lazy" alt="ship inspection">
                     </div>
                     <div class="swiper-slide">
-                        <img src="images/ship_inspection/3.webp" alt="ship inspection">
+                        <img src="images/ship_inspection/3.webp" loading="lazy" alt="ship inspection">
                     </div>
                     <div class="swiper-slide">
-                        <img src="images/ship_inspection/4.webp" alt="ship inspection">
+                        <img src="images/ship_inspection/4.webp" loading="lazy" alt="ship inspection">
                     </div>
                     <div class="swiper-slide">
-                        <img src="images/ship_inspection/5.webp" alt="ship inspection">
+                        <img src="images/ship_inspection/5.webp" loading="lazy" alt="ship inspection">
                     </div>
                     <div class="swiper-slide">
-                        <img src="images/ship_inspection/6.webp" alt="ship inspection">
+                        <img src="images/ship_inspection/6.webp" loading="lazy" alt="ship inspection">
                     </div>
                 </div>
             </div>
@@ -217,7 +222,9 @@
         swiperJs.onload = () => {
             var mySwiper = new Swiper ('.swiper', {
                 loop: true,
-                spaceBetween : 100,
+                spaceBetween : 10,
+                slidesPerView: 1,
+                speed : 800,
                 autoplay: {
                     delay: 2000,
                 },

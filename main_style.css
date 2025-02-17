@@ -41,7 +41,9 @@
 body {
     margin: 0;
     font-family: 微軟正黑體, Verdana, Arial;
+    transition: all 0.3s;
 }
+
 
 img,#header_background,#mask {
     width: 100%;
@@ -160,11 +162,11 @@ section {
 section:not(#company) > div {   
     padding: var(--contentPadding);
 }
-section > div:nth-of-type(2) {
+section > div:nth-of-type(2), .case_content > p:nth-of-type(2) {
     font-size: 12pt;
     line-height: 1.75;
 }
-section:nth-of-type(even) {
+section:nth-of-type(even), .swiper-slide {
     background-color: #e1dfdb;
 }
 
@@ -225,7 +227,7 @@ section:nth-of-type(odd) .service_img {
     align-items: center;
 }
 
-.service_img img{
+.service_img img, .swiper-slide img{
     width: 95% !important;
     height: 95% !important;
 }
@@ -258,12 +260,34 @@ div p:nth-of-type(2) {
 }
 
 .swiper {
-    width: 30vw;
-    height: 30vw;
-
+    width: 16vw;
+    height: 16vw;
+    padding: 0 17vw !important;
 } 
 
 .swiper img {
     object-fit: cover;
-    
 } 
+
+
+.ship_insection {
+    display: flex;
+    flex-direction: row;
+}
+
+.case_text {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 14vw !important;
+    width: 26vw;
+}
+
+
+.swiper-slide{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    -webkit-transition-timing-function: cubic-bezier(0.48, 0.02, 0.38, 1);
+    -o-transition-timing-function: cubic-bezier(0.48, 0.02, 0.38, 1);
+    transition-timing-function: cubic-bezier(0.48, 0.02, 0.38, 1)
+}
