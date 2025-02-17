@@ -166,12 +166,16 @@ section > div:nth-of-type(2), .case_content > p:nth-of-type(2) {
     font-size: 12pt;
     line-height: 1.75;
 }
-section:nth-of-type(even), .swiper-slide,.ship_insection {
+section:nth-of-type(even),.ship_insection {
     background-color: #e1dfdb;
 }
 
 section:nth-of-type(odd) .service_img {
     background-color: #e1dfdb;
+}
+
+.swiper-slide {
+    background: #ffffff;
 }
 
 #footer {
@@ -273,6 +277,7 @@ div p:nth-of-type(2) {
 .ship_insection {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .case_text {
