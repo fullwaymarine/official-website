@@ -38,6 +38,15 @@
     }
 }
 
+.fade-up {
+    opacity: 0 !important;
+    transform: translateY(30px) !important;
+}
+.fade-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 body {
     margin: 0;
     font-family: 微軟正黑體, Verdana, Arial;
@@ -157,6 +166,7 @@ a{
 
 section {
     padding: 16px 0;
+    transition: opacity 1s ease, transform 1s ease;
 }
 
 section:not(#company) > div {   
