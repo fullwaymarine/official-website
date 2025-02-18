@@ -36,7 +36,32 @@
     #nav_company_name{
         font-size: 3.8vw !important;
     }
+
+    .ship_insection {
+        flex-direction: column !important;
+        
+    }
+    .case_text{
+        padding: var(--contentPadding) !important;
+        width: unset !important;
+    }
+
+    .swiper {
+        width: 75vw !important;
+        height: 75vw !important;
+    }
 }
+
+@media screen  and (min-width: 768px){
+    .swiper {
+        padding: 0 16.8vw !important;
+    } 
+}
+
+.swiper {
+    width: 16vw;
+    height: 16vw;
+} 
 
 .fade-up {
     opacity: 0 !important;
@@ -169,7 +194,7 @@ section {
     transition: opacity 1s ease, transform 1s ease;
 }
 
-section:not(#company) > div {   
+section:not(#company):not(.ship_insection) > div {   
     padding: var(--contentPadding);
 }
 section > div:nth-of-type(2), .case_content > p:nth-of-type(2) {
@@ -274,12 +299,6 @@ div p:nth-of-type(2) {
     line-height: 1.6;
 }
 
-.swiper {
-    width: 16vw;
-    height: 16vw;
-    padding: 0 16.8vw !important;
-} 
-
 .swiper img {
     object-fit: cover;
 } 
@@ -294,7 +313,7 @@ div p:nth-of-type(2) {
 .case_text {
     display: flex;
     flex-direction: column;
-    padding: 0 0 0 14vw !important;
+    padding: 0 0 0 14vw;
     width: 26vw;
 }
 
