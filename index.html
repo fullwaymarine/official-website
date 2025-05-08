@@ -28,7 +28,7 @@
     <meta name="robots" content="index, follow">
 
     <link rel="icon" href="asset/favicon.svg" sizes="32x32" type="image/svg">
-    <link rel="stylesheet" href="main_style.css?32ewd444w2sesw43">
+    <link rel="stylesheet" href="main_style.css?ddd3rrr2ewd444ew2sesw4d3">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">   
     <title>福爾威船舶有限公司 FullwayMarine CO.LTD</title>
 </head>
@@ -154,7 +154,7 @@
             </div>
             
             <div class="swiper gallery">
-                <div class="swiper-wrapper ">
+                <div class="swiper-wrapper inspection-img">
                     <div class="swiper-slide">
                         <img src="images/ship_inspection/1.webp" loading="lazy" alt="ship inspection">
                     </div>
@@ -176,6 +176,62 @@
                 </div>
             </div>
         </section>
+
+        <section class="kindbar fade-up" >
+            <div class="title kindbarDiv">
+                On-Site
+            </div>
+        </section>
+        <section class="photo-marquee">
+            <div class="marquee-track">
+                <div class="marquee-track-wrapper swiper-wrapper">
+              <!-- 將你想放的圖片依序貼上 -->
+                    <div class="swiper-slide">
+                        <img src="images/on_site_photo/1.jpg" id="photo1" alt="gallery photo1" loading="lazy">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/on_site_photo/2.jpg" id="photo2" alt="gallery photo 2" loading="lazy">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/on_site_photo/3.jpg" id="photo2" alt="gallery photo 3" loading="lazy">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/on_site_photo/4.jpg" id="photo2" alt="gallery photo 4" loading="lazy">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/on_site_photo/5.jpg" id="photo2" alt="gallery photo 5" loading="lazy">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/on_site_photo/6.jpg" id="photo2" alt="gallery photo 6" loading="lazy">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/on_site_photo/7.jpg" id="photo2" alt="gallery photo 7" loading="lazy">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/on_site_photo/8.jpg" id="photo2" alt="gallery photo 8" loading="lazy">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/on_site_photo/9.jpg" id="photo2" alt="gallery photo 9" loading="lazy">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/on_site_photo/10.jpg" id="photo2" alt="gallery photo 10" loading="lazy">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/on_site_photo/11.jpg" id="photo2" alt="gallery photo 11" loading="lazy">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/on_site_photo/12.jpg" id="photo2" alt="gallery photo 2" loading="lazy">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/on_site_photo/2.jpg" id="photo" alt="gallery photo 12" loading="lazy">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/on_site_photo/13.jpg" id="photo13" alt="gallery photo 13" loading="lazy">
+                    </div>
+               </div>
+            </div>
+          </section>
+
 
         <section class="kindbar fade-up" >
             <div class="title kindbarDiv">
@@ -220,7 +276,7 @@
         document.body.appendChild(swiperJs);
 
         swiperJs.onload = () => {
-            var mySwiper = new Swiper ('.swiper', {
+            var Swiper1 = new Swiper ('.swiper', {
                 loop: true,
                 spaceBetween : 10,
                 slidesPerView: 1,
@@ -232,10 +288,21 @@
                     el: '.swiper-pagination',
                 },
             });
+
+            var Swiper2 = new Swiper ('.marquee-track', {
+                loop: true,
+                spaceBetween : 10,
+                slidesPerView: 1,
+                speed : 10000,
+                autoplay: {
+                    delay: 0, 
+                    disableOnInteraction: false
+                },
+            });
         }
 
 
-        const sections = document.querySelectorAll('section');
+    const sections = document.querySelectorAll('section');
     const options = {
         root: null,
         rootMargin: '0px',
@@ -254,5 +321,7 @@
             observer.observe(section);
         });
     }
+
+    
 </script>
 </html>

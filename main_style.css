@@ -201,7 +201,7 @@ section > div:nth-of-type(2), .case_content > p:nth-of-type(2) {
     font-size: 12pt;
     line-height: 1.75;
 }
-section:nth-of-type(even),.ship_insection {
+section:nth-of-type(even),.ship_insection,.photo-marquee,#contact {
     background-color: #e1dfdb;
 }
 
@@ -348,3 +348,39 @@ div p:nth-of-type(2) {
     border-right: 10px solid transparent;
     border-bottom: 10px solid var(--titleColor);
 }
+
+#crew_management .service_img::after {
+    border-bottom: 10px solid var(--titleColor);
+}
+
+.inspection-img div {
+    aspect-ratio: 1/1;
+}
+
+.photo-marquee {
+    overflow: hidden;
+    width: 100%;
+    padding: 1rem 0;
+  }
+  
+  .marquee-track {
+    
+  }
+  
+  .photo-marquee .marquee-track img {
+    height: 300px;
+    /* width: auto !important; */
+    margin: 0 10px;
+    object-fit: contain;
+    border-radius: 8px;
+  }
+  
+  /* 重複圖片區域 */
+  .marquee-track-wrapper {
+    height: 400px !important;
+    transition-timing-function: linear !important;
+  }
+  .marquee-track-wrapper div{
+    max-width: 500px;
+    /* width: auto !important; */
+  }
