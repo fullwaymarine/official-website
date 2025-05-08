@@ -13,6 +13,7 @@
     --serviceFontSize: 1.6vw;
     --serviceImgWidth: 12vw;
     --navFontSize: 1.2vw;
+    --marqueeHeight: 400px;
 }
 
 
@@ -22,9 +23,10 @@
         --contentPadding: 0 8vw;
         --footerFontSize: 3vw;
         --companyNameFontSize: 7.2vw;
-        --titleFontSize: 2.8vh;
+        --titleFontSize: 2.2vh;
         --serviceFontSize: 3vh;
         --serviceImgWidth: 100%;
+        --marqueeHeight: 300px;
     }
     
     .services {
@@ -378,7 +380,7 @@ div p:nth-of-type(2) {
   
   /* 重複圖片區域 */
   .marquee-track-wrapper {
-    height: 400px !important;
+    height: var(--marqueeHeight) !important;
     transition-timing-function: linear !important;
   }
   .marquee-track-wrapper div{
